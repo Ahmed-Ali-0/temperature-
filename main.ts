@@ -1,7 +1,7 @@
 let Temperaturemicrobit = 0
-basic.forever(function () {
+input.onButtonPressed(Button.A, function () {
     Temperaturemicrobit = input.temperature()
-    basic.showNumber(Temperaturemicrobit)
+    basic.showString("" + (Temperaturemicrobit))
     basic.pause(1000)
     basic.clearScreen()
 })
